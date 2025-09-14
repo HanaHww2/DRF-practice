@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Database files
+db.sqlite3
+*.sqlite3
+
+# Media and static files (if served directly from the project root and not collected to a separate location)
+media/
+static_collected/
+
+# Configuration files with sensitive information (e.g., local settings, environment variables)
+local_settings.py
+.env
+*.log
+
+# IDE-specific files (e.g., VS Code, PyCharm)
+.vscode/
+.idea/
+
+# Testing and coverage
+.coverage
+htmlcov/
+.tox/
+
+# Other generated files
+*.pot # Portable Object Template files for internationalization
