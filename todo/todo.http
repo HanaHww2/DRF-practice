@@ -1,0 +1,29 @@
+POST http://localhost:8000/api/auth/signup/
+Content-Type: application/json
+
+{
+  "email":"hanahww3@gmail.com",
+  "password":"12345678"
+}
+
+### 로그인
+POST http://localhost:8000/api/auth/token/
+Content-Type: application/json
+
+{
+  "email":"hanahww2@gmail.com",
+  "password":"1234"
+}
+
+###
+GET http://localhost:8000/api/todos/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4MTA2MDQ3LCJpYXQiOjE3NTgxMDQyNDcsImp0aSI6IjNkNDg1YjczOTQwNjQyMmU5YmY5YTFiYTcyMzE0NTUxIiwidXNlcl9pZCI6IjEifQ.tAtiirwCXQLW6x8SXfDQ7lahUi5rGHfQF3c2HjbXt7U
+
+### 
+PATCH http://localhost:8000/api/todos/1/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU4MTA2MDQ3LCJpYXQiOjE3NTgxMDQyNDcsImp0aSI6IjNkNDg1YjczOTQwNjQyMmU5YmY5YTFiYTcyMzE0NTUxIiwidXNlcl9pZCI6IjEifQ.tAtiirwCXQLW6x8SXfDQ7lahUi5rGHfQF3c2HjbXt7U
+
+{
+  "status": "DONE"
+}
